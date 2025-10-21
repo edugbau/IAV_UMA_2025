@@ -1,0 +1,55 @@
+test_case,algorithm,heuristic,tubes,colors,seed,scramble,success,moves,explored_nodes,expanded_nodes,max_frontier,time_seconds
+Configuración Mínima,bfs,N/A,5,3,42,30,True,7,780,480,303,0.0076
+Configuración Mínima,dfs,N/A,5,3,42,30,True,65,66,65,66,0.0007
+Configuración Mínima,astar,entropy,5,3,42,30,True,7,8,7,32,0.0007
+Configuración Mínima,astar,completion,5,3,42,30,True,7,20,19,54,0.0006
+Configuración Mínima,astar,blocking,5,3,42,30,True,8,14,13,45,0.0006
+Configuración Mínima,ida,entropy,5,3,42,30,True,11,34,12,12,0.0005
+Configuración Mínima,ida,completion,5,3,42,30,True,9,45,21,10,0.0005
+Configuración Mínima,ida,blocking,5,3,42,30,True,28,35,28,29,0.0006
+Configuración Estándar,bfs,N/A,8,6,100,60,True,20,293389,184572,108845,3.9929
+Configuración Estándar,dfs,N/A,8,6,100,60,True,100,1172,482,101,0.0163
+Configuración Estándar,astar,entropy,8,6,100,60,True,21,44,43,190,0.0039
+Configuración Estándar,astar,completion,8,6,100,60,True,21,1618,1617,3756,0.0512
+Configuración Estándar,astar,blocking,8,6,100,60,True,21,26,25,94,0.0018
+Configuración Estándar,ida,entropy,8,6,100,60,True,40,296,78,41,0.0055
+Configuración Estándar,ida,completion,8,6,100,60,True,25,3041,38013,26,1.3733
+Configuración Estándar,ida,blocking,8,6,100,60,True,60,80,60,61,0.0017
+Escalabilidad A* con Blocking,astar,blocking,5,3,500,30,True,6,11,10,33,0.0005
+Escalabilidad A* con Blocking,astar,blocking,6,4,500,40,True,14,20,19,60,0.001
+Escalabilidad A* con Blocking,astar,blocking,7,5,500,50,True,13,20,19,78,0.0013
+Escalabilidad A* con Blocking,astar,blocking,8,6,500,60,True,19,27,26,101,0.0019
+Escalabilidad A* con Blocking,astar,blocking,9,7,500,70,True,22,28,27,107,0.0021
+Escalabilidad A* con Blocking,astar,blocking,10,8,500,80,True,24,39,38,180,0.004
+Escalabilidad A* con Blocking,astar,blocking,11,9,500,90,True,29,54,53,153,0.0044
+Escalabilidad A* con Blocking,astar,blocking,12,10,500,100,True,33,74,73,198,0.0058
+Escalabilidad IDA* con Entropy,ida,entropy,5,3,500,30,True,8,19,9,9,0.0004
+Escalabilidad IDA* con Entropy,ida,entropy,7,5,500,50,True,21,79,26,22,0.0013
+Escalabilidad IDA* con Entropy,ida,entropy,9,7,500,70,True,39,104,51,40,0.0025
+Escalabilidad IDA* con Entropy,ida,entropy,11,9,500,90,True,57,101,127,58,0.0061
+Comparación Heurísticas (Puzzle Medio),astar,entropy,9,7,999,80,True,24,44,43,196,0.0049
+Comparación Heurísticas (Puzzle Medio),astar,completion,9,7,999,80,True,24,1756,1755,2568,0.0537
+Comparación Heurísticas (Puzzle Medio),astar,blocking,9,7,999,80,True,24,34,33,134,0.0024
+Comparación Heurísticas (Puzzle Medio),ida,entropy,9,7,999,80,True,59,88,60,60,0.0024
+Comparación Heurísticas (Puzzle Medio),ida,completion,9,7,999,80,True,29,3336,520298,30,18.3121
+Comparación Heurísticas (Puzzle Medio),ida,blocking,9,7,999,80,True,70,98,72,72,0.0024
+Comparación Heurísticas (Puzzle Difícil),astar,entropy,11,9,777,100,True,31,2588,2587,11628,0.2989
+Comparación Heurísticas (Puzzle Difícil),astar,completion,11,9,777,100,True,31,8806,8805,28230,0.4443
+Comparación Heurísticas (Puzzle Difícil),astar,blocking,11,9,777,100,True,31,42,41,179,0.0049
+Comparación Heurísticas (Puzzle Difícil),ida,entropy,11,9,777,100,True,57,226,74,58,0.0064
+Robustez: A* Blocking (7T/5C),astar,blocking,7,5,42,60,True,13,19,18,67,0.0011
+Robustez: A* Blocking (7T/5C),astar,blocking,7,5,123,60,True,14,20,19,64,0.001
+Robustez: A* Blocking (7T/5C),astar,blocking,7,5,256,60,True,15,22,21,80,0.0014
+Robustez: A* Blocking (7T/5C),astar,blocking,7,5,789,60,True,17,24,23,77,0.0017
+Robustez: A* Blocking (7T/5C),astar,blocking,7,5,999,60,True,15,25,24,99,0.0014
+Robustez: IDA* Entropy (8T/6C),ida,entropy,8,6,42,60,True,35,106,42,36,0.0021
+Robustez: IDA* Entropy (8T/6C),ida,entropy,8,6,100,60,True,40,296,78,41,0.0064
+Robustez: IDA* Entropy (8T/6C),ida,entropy,8,6,333,60,True,35,78,37,36,0.0019
+Robustez: IDA* Entropy (8T/6C),ida,entropy,8,6,666,60,True,37,141,47,38,0.0024
+Robustez: IDA* Entropy (8T/6C),ida,entropy,8,6,999,60,True,30,441,113,31,0.016
+Casos Extremos,astar,blocking,12,10,1234,120,True,34,103,102,193,0.0072
+Casos Extremos,ida,blocking,12,10,1234,120,False,0,0,0,0,0
+Casos Extremos,astar,entropy,6,4,321,50,True,14,75,74,230,0.0044
+Casos Extremos,ida,entropy,6,4,321,50,True,21,79,32,22,0.0016
+Casos Extremos,astar,blocking,10,3,555,40,True,11,399,398,3821,0.0529
+Casos Extremos,ida,blocking,10,3,555,40,False,0,0,0,0,0

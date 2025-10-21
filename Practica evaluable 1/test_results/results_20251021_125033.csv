@@ -1,0 +1,34 @@
+test_case,algorithm,heuristic,tubes,colors,seed,scramble,success,moves,explored_nodes,expanded_nodes,max_frontier,time_seconds
+Configuración Mínima,bfs,N/A,5,3,42,30,True,7,780,480,303,0.0093
+Configuración Mínima,dfs,N/A,5,3,42,30,True,65,66,65,66,0.0008
+Configuración Mínima,astar,entropy,5,3,42,30,True,7,8,7,32,0.0006
+Configuración Mínima,astar,completion,5,3,42,30,True,7,20,19,54,0.0006
+Configuración Mínima,astar,blocking,5,3,42,30,True,8,14,13,45,0.0007
+Configuración Mínima,ida,entropy,5,3,42,30,True,11,34,12,12,0.0005
+Configuración Mínima,ida,completion,5,3,42,30,True,9,45,21,10,0.0005
+Configuración Mínima,ida,blocking,5,3,42,30,True,28,35,28,29,0.0006
+Configuración Estándar,bfs,N/A,8,6,100,60,True,20,293389,184572,108845,4.2836
+Configuración Estándar,dfs,N/A,8,6,100,60,True,100,1172,482,101,0.0158
+Configuración Estándar,astar,entropy,8,6,100,60,True,21,44,43,190,0.0043
+Configuración Estándar,astar,completion,8,6,100,60,True,21,1618,1617,3756,0.0547
+Configuración Estándar,astar,blocking,8,6,100,60,True,21,26,25,94,0.0019
+Configuración Estándar,ida,entropy,8,6,100,60,True,40,296,78,41,0.0057
+Configuración Estándar,ida,completion,8,6,100,60,True,25,3041,38013,26,1.4924
+Configuración Estándar,ida,blocking,8,6,100,60,True,60,80,60,61,0.002
+Escalabilidad Progresiva,astar,blocking,6,4,10,40,True,12,19,18,65,0.0011
+Escalabilidad Progresiva,astar,blocking,8,6,10,60,True,21,30,29,113,0.0021
+Escalabilidad Progresiva,astar,blocking,10,8,10,80,True,26,41,40,169,0.004
+Escalabilidad Progresiva,ida,blocking,10,8,10,80,True,78,183,202,80,0.0066
+Escalabilidad Progresiva,ida,completion,5,3,42,30,True,9,45,21,10,0.0006
+Escalabilidad Progresiva,ida,blocking,5,3,42,30,True,28,35,28,29,0.0005
+Comparación Heurísticas,astar,entropy,9,7,999,80,True,24,44,43,196,0.0047
+Comparación Heurísticas,astar,completion,9,7,999,80,True,24,1756,1755,2568,0.0542
+Comparación Heurísticas,astar,blocking,9,7,999,80,True,24,34,33,134,0.0026
+Comparación Heurísticas,ida,entropy,9,7,999,80,True,59,88,60,60,0.0024
+Comparación Heurísticas,ida,completion,9,7,999,80,True,29,3336,520298,30,20.4943
+Comparación Heurísticas,ida,blocking,9,7,999,80,True,70,98,72,72,0.0024
+Robustez con Distintas Semillas,astar,blocking,7,5,42,60,True,13,19,18,67,0.0012
+Robustez con Distintas Semillas,astar,blocking,7,5,100,60,True,16,23,22,82,0.0013
+Robustez con Distintas Semillas,astar,blocking,7,5,256,60,True,15,22,21,80,0.0014
+Robustez con Distintas Semillas,astar,blocking,7,5,500,60,True,13,20,19,78,0.0012
+Robustez con Distintas Semillas,astar,blocking,7,5,999,60,True,15,25,24,99,0.0018
